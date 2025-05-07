@@ -1,4 +1,4 @@
-# Exp.No:28  
+# Exp.No:6A  
 ## Abstraction
 
 ---
@@ -34,11 +34,52 @@ To write a Python program to define the abstract base class named `Polygon` and 
 ### PROGRAM
 
 ```
+from abc import ABC
+class type_shape(ABC):
+#create abstract method area()
+def area(self):
+pass
 
+class Rectangle(type_shape):
+length = 6
+breadth = 4
+def area(self):
+return self.length * self.breadth
+
+class Circle(type_shape):
+radius = 7
+#define area function to calculate area def area(self):
+return 3.14self.radiusself.radius
+
+class Square(type_shape):
+length = 4
+#define area function to calculate area
+def area(self):
+return self.length*self.length
+
+class triangle:
+length = 5
+width = 4
+#define area function to calculate area
+def area(self):
+return 0.5self.lengthself.width
+
+r = Rectangle() # object created for the class 'Rectangle'
+c = Circle() # object created for the class 'Circle'
+s = Square() # object created for the class 'Square'
+t = triangle() # object created for the class 'triangle'
+print("Area of a rectangle:", r.area()) # call to 'area' method defined inside the class.
+print("Area of a circle:", c.area()) # call to 'area' method defined inside the class.
+print("Area of a square:", s.area()) # call to 'area' method defined inside the class.
+print("Area of a triangle:", t.area()) # call to 'area' method defined inside the class.
 
 ```
 
 ### OUTPUT
 
 
+![image](https://github.com/user-attachments/assets/9839355a-1a60-41c4-9bd2-651b5231ea46)
+
+
 ### RESULT
+Thus, the given python program is implemented and executed sucessfully.
